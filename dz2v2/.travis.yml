@@ -1,0 +1,15 @@
+os: linux
+dist: focal
+language: c
+
+install:
+  - sudo apt-get update
+
+
+env:
+  - BUILD=Debug
+  - BUILD=Release
+
+script:
+  - cmake -B cmake-build-debug -DCMAKE_BUILD_TYPE=$BUILD
+  - make -C cmake-build-debug
