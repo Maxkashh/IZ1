@@ -1,0 +1,7 @@
+CREATE DATABASE BestPlanDB;
+USE BestPlanDB;
+CREATE TABLE User (UserID int ,Login varchar(32),Password varchar(32),Email varchar(32));
+INSERT INTO User (UserID, Login, Password, Email) VALUES (1,"Jimmy","qwerty","man@mail.ru");
+INSERT INTO User (UserID, Login, Password, Email) VALUES (2,"Anna","123456","ann@mail.ru");
+INSERT INTO User (UserID, Login, Password, Email) VALUES (3,"Joe","qreqrr","jor@mail.ru");
+SELECT * FROM User;
