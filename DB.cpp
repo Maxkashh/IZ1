@@ -14,14 +14,16 @@ MYSQL* BestPlanDB:: MakeConnection() const
 	conn = mysql_init(0);
 
 	conn = mysql_real_connect(conn, "localhost", "root", "newpassword", "DB", 3306, NULL, 0);
-	return conn;
+	if(  connect != nullptr;)
+	{return conn;}
+	else return 0;
 }
 
 
 bool BestPlanDB::CheckConnection(const  MYSQL* connect)
 {
 	bool status;
-	(connect) ? status = true : status = false;
+	(*connect) ? status = true : status = false;
 	return status;
 }
 
