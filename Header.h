@@ -6,7 +6,7 @@
 #include<vector>
 
 int qstate;
-class BestPlanDB : public MYSQL
+class BestPlanDB  
 {
 public:
 	BestPlanDB() = default;
