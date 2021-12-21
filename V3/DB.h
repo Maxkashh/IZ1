@@ -6,7 +6,7 @@
 #include<vector>
 using get_strings= std::vector<std::string>;
 
-class BestPlanDB : public MYSQL
+class BestPlanDB 
 {
 private:
     MYSQL*  MakeConnection(const std::string &NameOfDataBase) const;
